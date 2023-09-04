@@ -1,5 +1,17 @@
-// Assignment code here
+// Assignment code below
+// create an array of possible user input characters
+var charOptions = [" ", "!", "#", "$", "%", "&", "'", "(", ")", "*", "+", ",", "-", ".", "/", ":", ";", "<", "=", ">", "?", "@", "[", "/", "]","^", "_", "`", "{", "|", "}", "~"];
 
+
+
+
+
+
+
+
+
+
+// Assignment code above
 
 // Get references to the #generate element
 var generateBtn = document.querySelector("#generate");
