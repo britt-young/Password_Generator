@@ -1,28 +1,21 @@
 // Assignment code below
 
-// initialize global variables??
-
-// create an array of possible user input characters
-var charOptions = [" ", "!", "#", "$", "%", "&", "'", "(", ")", "*", "+", ",", "-", ".", "/", ":", ";", "<", "=", ">", "?", "@", "[", "/", "]","^", "_", "`", "{", "|", "}", "~"];
-
-// event on button element
-const btn = document.querySelector("button");
-
-// create a function for generation
-function random(number) {
-  return Math.floor(Math.random() * (number + 1));
-}
-
-// when button is clicked (event occured), randomly select password combo of ## character
+// create a function to generate random password using at least (1) uppercase (1) lowercase (1) number and (1) symbol
 function generatePass() {
-  const newPass = `rgb(${random(255)}, ${random(255)}, ${random(255)})`;
-  document.getElementById("password") = newPass;
-}
+  password = "";
+  password += upperCase[Math.floor(Math.random() * upperCase.length)];
+  password += lowerCase[Math.floor(Math.random() * lowerCase.length)];
+  password += num[Math.floor(Math.random() * num.length)];
+  password += symbol[Math.floor(Math.random() * symbol.length)];
 
-btn.addEventListener("click", generatePass);
+  //
+  if (length > password.length) {
+    password += allChar[Math.floor(Math.random() * allChar.length)];
+  }
+  passwordBox.value = password;
+}
 
 // Assignment code above
-
 
 // Get references to the #generate element
 var generateBtn = document.querySelector("#generate");
@@ -33,7 +26,6 @@ function writePassword() {
   var passwordText = document.querySelector("#password");
 
   passwordText.value = password;
-
 }
 
 // Add event listener to generate button
