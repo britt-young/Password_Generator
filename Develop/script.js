@@ -17,75 +17,64 @@ function generatePass() {
   password += num[Math.floor(Math.random() * num.length)];
   password += symbol[Math.floor(Math.random() * symbol.length)];
 
-  //use for loop to ensure password length meets user selected desired length 
+  //use for loop to ensure password length meets user selected desired length
   //"run" code until password = length
-  for(let i = 0; i < length; i++){
+  for (let i = 0; i < length; i++) {
     password += allChar[Math.floor(Math.random() * allChar.length)];
   }
- return password;
-} 
+  return password;
+}
 
 // function to generate criteria prompts then execute password generation
-function passCriteria(){
+function passCriteria() {
   //length prompt
-  var userLengthInput = ""
+  var userLengthInput = "";
 
-
-  
   //uppercase criteria prompt
-  var userUpperInput = confirm("Include uppercase letters in your password?")
+  var userUpperInput = confirm("Include uppercase letters in your password?");
   // if user inputs a lowercase character, change to uppercase
   if (userUpperInput === "Y") {
-   //***confirm yes and "track" user response***
-   window.alert("👍")
+    //***confirm yes and "track" user response***
+    window.alert("👍");
   }
 
-
-//lowercase criteria prompt
-  var userLowerInput = confirm("Include lowercase letters in your password?")
+  //lowercase criteria prompt
+  var userLowerInput = confirm("Include lowercase letters in your password?");
   // if user inputs a lowercase character, change to uppercase
   if (userLowerInput === "Y") {
-    window.alert("👍")
-   //***confirm yes and "track" user response***
+    window.alert("👍");
+    //***confirm yes and "track" user response***
   }
 
-
-//numerical criteria prompt
-  var userNumInput = confirm("Include numbers in your password?")
+  //numerical criteria prompt
+  var userNumInput = confirm("Include numbers in your password?");
   // if user inputs a lowercase character, change to uppercase
   if (userNumInput === "Y") {
-    window.alert("👍")
-   //***confirm yes and "track" user response***
+    window.alert("👍");
+    //***confirm yes and "track" user response***
   }
 
-
-//special characters criteria prompt
-  var userSymbInput =  confirm("Include special characters in your password?")
+  //special characters criteria prompt
+  var userSymbInput = confirm("Include special characters in your password?");
   // if user inputs a lowercase character, change to uppercase
   if (userSymbInput === "Y") {
-    window.alert("👍")
-      //***confirm yes and "track" user response***
+    window.alert("👍");
+    //***confirm yes and "track" user response***
   }
-
 
   // if no select, then alert
   // if userNumbInput true, addd numb into allChar.
-  // 
   //
-  // 
-  
+  //
+  //
 }
 
-function generatePassword(){
+function generatePassword() {
   passCriteria();
   var resultPass = generatePass();
   return resultPass;
-
 }
 // Assignment code above
-
-
-
 
 // Get references to the #generate element
 var generateBtn = document.querySelector("#generate");
