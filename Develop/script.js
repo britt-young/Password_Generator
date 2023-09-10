@@ -29,7 +29,7 @@ function generatePass() {
 // function to generate criteria prompts then execute password generation
 function passCriteria(){
   //uppercase criteria prompt
-  var userUpperInput = window.prompt("Do you want to include uppercase letters? Y or N?")
+  var userUpperInput = prompt("Do you want to include uppercase letters? Y or N?")
   // if user inputs a lowercase character, change to uppercase
   if (userUpperInput.toUpperCase() === "Y") {
    //***confirm yes and "track" user response***
@@ -41,7 +41,7 @@ function passCriteria(){
 
 
 //lowercase criteria prompt
-  var userLowerInput = window.prompt("Do you want to include lowercase letters? Y or N?")
+  var userLowerInput = prompt("Do you want to include lowercase letters? Y or N?")
   // if user inputs a lowercase character, change to uppercase
   if (userLowerInput.toUpperCase() === "Y") {
     window.alert("👍")
@@ -53,7 +53,7 @@ function passCriteria(){
 
 
 //numerical criteria prompt
-  var userNumInput = window.prompt("Do you want to include numbers? Y or N?")
+  var userNumInput = prompt("Do you want to include numbers? Y or N?")
   // if user inputs a lowercase character, change to uppercase
   if (userNumInput.toUpperCase() === "Y") {
     window.alert("👍")
@@ -65,7 +65,7 @@ function passCriteria(){
 
 
 //special characters criteria prompt
-  var userSpecInput = window.prompt("Do you want to include special characters? Y or N?")
+  var userSpecInput = prompt("Do you want to include special characters? Y or N?")
   // if user inputs a lowercase character, change to uppercase
   if (userSpecInput.toUpperCase() === "Y") {
     window.alert("👍")
