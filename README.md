@@ -25,7 +25,7 @@ Once the user has specified their criteria, the secure password will automatical
 To add a screenshot, create an `assets/images` folder in your repository and upload your screenshot to it. Then, using the relative filepath, add it to your README using the following syntax:
 
     ```md
-    ![alt text](assets/images/screenshot.png)
+    ![deployed_page](assets/mock-up.png)
     ```
 
 ## Credits
