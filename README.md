@@ -20,7 +20,7 @@ Upon site navigation, the user is presented with a blank text box and a "generat
 - inclusion of numbers
 - inclusion of special characters
 
-  Once the user has specified their criteria, the secure password will automatically be generated.
+Once the user has specified their criteria, the secure password will automatically be generated.
 
 To add a screenshot, create an `assets/images` folder in your repository and upload your screenshot to it. Then, using the relative filepath, add it to your README using the following syntax:
 
